@@ -31,7 +31,7 @@ describe("Funciones ", function() {
   });
 
 
- /*
+ 
   it("Puedo sumar dos números", function() {
     calculadora.sumar(2);
     calculadora.sumar(3);
@@ -62,6 +62,5 @@ describe("Funciones ", function() {
     calculadora.restar(7);
     calculadora.reset();
     expect(calculadora.valor()).toEqual(0);
-  })
-  */ 
+  }) 
 });
