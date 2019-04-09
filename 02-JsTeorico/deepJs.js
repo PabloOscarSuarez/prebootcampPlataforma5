@@ -1,12 +1,11 @@
-
 // NO TOCAR ESTE ARCHIVO
 
 // VAYAN DIRECTO A LOS TEST
 
 function scopes() {
-  var a = 'hola'
+  var a = "hola";
   function otroScope() {
-    var a = 5
+    var a = 5;
     function unUltimoScope() {
       a = false;
       return a;
@@ -16,24 +15,25 @@ function scopes() {
   return a;
 }
 
-function bloque(){
-  var nombre = 'Facu';
+function bloque() {
+  var nombre = "Facu";
 
-  function cambio(){
-    var nombre = 'Toni';
+  function cambio() {
+    var nombre = "Toni";
   }
 
   if (true) {
-    var nombre = 'Guille';
+    var nombre = "Guille";
   }
-  
+
   cambio();
   return nombre;
 }
 
 function igualdad() {
-  
-  var foo, bar, bazz = 3;
+  var foo,
+    bar,
+    bazz = 3;
 
   foo = bar = bazz;
   return foo;
@@ -41,18 +41,15 @@ function igualdad() {
 
 function boolean(bool) {
   var foo = 1,
-      bar = 2,
-      bazz = 3;
+    bar = 2,
+    bazz = 3;
 
-  if (bool){
+  if (bool) {
     return foo < bar < bazz;
-
   } else {
     return bar < foo < bazz;
-
   }
 }
-
 
 // NO TOCAR ESTE ARCHIVO
 
