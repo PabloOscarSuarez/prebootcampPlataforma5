@@ -1,19 +1,20 @@
 
 function crearCalculadora() {
-    let calc = {}
-
-}
-
-crearCalculadora.prototype.sumar=function(x){
- 
-    }
-crearCalculadora.prototype.restar=function(){
+    let res=0
+    let calc={
+        valor:function(){return res} ,
+        sumar:function(x){
+            return res+=x
+            },
+        restar:function(y){
+            return res -=y
+            },
+        reset: function (){return res=0}
+    
+    
     
     }
-crearCalculadora.prototype.reset=function(){
-    return crearCalculadora.valor()
-    
-    }
-crearCalculadora.prototype.valor=function(){
-    return this.valor   
+
+    return calc
+
 }

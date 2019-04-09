@@ -13,7 +13,6 @@ describe("Funciones ", function() {
     // La función crearCalculadora se va a ejecutar una vez por cada test,
     // entonces cada spec tendrá una calculadora inicializada en cero.
     calculadora = crearCalculadora();
-    
   });
 
   it("El valor inicial debería ser 0", function() {
@@ -25,14 +24,14 @@ describe("Funciones ", function() {
   });
 
 
-   /*
+   
   it("Puedo agregar un valor", function() {
     calculadora.sumar(2);
     expect(calculadora.valor()).toEqual(2);
   });
 
 
- 
+ /*
   it("Puedo sumar dos números", function() {
     calculadora.sumar(2);
     calculadora.sumar(3);
