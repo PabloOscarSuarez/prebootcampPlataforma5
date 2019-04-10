@@ -2,8 +2,8 @@ function concatenar(x,y) {
     return x + y
     
 }
-function concatenar1(a,b,c,d) {
-    return a+b+c+d
+function concatenar1(a,b,c,d,e) {
+    return a+b+c+d+e
 }
 function invocarFunciones() {
     var cadena=""

@@ -26,7 +26,7 @@ describe('higher-order functions', function() {
     expect(invocarFunciones(funcionParaInvocar)).toEqual('Me llamaron! ');
 
     var otraFuncion = function() {
-      return ' y después a otra!';
+      return 'y después a otra!';
     };
     // `invocarFunciones` debería llamar a tantas funciones como argumentos sean pasados,
     // y retornar sus respuestas concatenadas
