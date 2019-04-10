@@ -6,12 +6,12 @@ describe('La propiedad arguments', function() {
 
   // Recuerden que arguments se parece a un Array pero no lo es.
   it('Nos permite pasar todos los argumentos que queramos', function() {
-    var string = concatenar('Esto', ' ', 'tendría que', ' ', 'usar join');
+    var string = concatenar1('Esto', ' ', 'tendría que', ' ', 'usar join');
     expect(string).toEqual('Esto tendría que usar join');
   });
 });
 
-// Vamos a trabar con los conceptos de que las funciones son objetos y los puedo
+// Vamos a trabajar con los conceptos de que las funciones son objetos y los puedo
 // ir pasando entre scopes.
 // Para eso es que me sirve saber que son `high-order functions`.
 describe('higher-order functions', function() {
@@ -23,14 +23,14 @@ describe('higher-order functions', function() {
   it('Puedo pasar una función como argumento', function() {
 
     // Crear una función que invoque sus parámetros y retorne el valor.
-    expect(invocarFunciones(funcionParaInvocar)).toEqual('Me llamaron!');
+    expect(invocarFunciones(funcionParaInvocar)).toEqual('Me llamaron! ');
 
     var otraFuncion = function() {
       return ' y después a otra!';
     };
     // `invocarFunciones` debería llamar a tantas funciones como argumentos sean pasados,
     // y retornar sus respuestas concatenadas
-    expect(invocarFunciones(funcionParaInvocar, otraFuncion)).toEqual('Me llamaron! y después a otra!');
+    expect(invocarFunciones(funcionParaInvocar, otraFuncion)).toEqual('Me llamaron! y después a otra! ');
   });
 });
 
