@@ -32,9 +32,11 @@ function invocacionUnica(fn) {
     if(resultado==true) {
         valorFuncion= fn()
         resultado= false
+        return valorFuncion
     }
     else{
-       valorFuncion=null 
+       valorFuncion=null
+       return valorFuncion
     }
 }
 
