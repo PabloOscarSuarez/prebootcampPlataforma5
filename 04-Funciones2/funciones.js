@@ -24,19 +24,20 @@ function creadorDeIncrementos(valor) {
     
 }
 ///no tengo idea como hacer una invocacion unica
+
+var resultado=true
 function invocacionUnica(fn) {
-    var resultado 
-    function evalua(){ 
-        if(fn) {
-            resultado= fn()
-            fn = null;
-        }
-        return resultado;
+    var valorFuncion
+    
+    if(resultado==true) {
+        valorFuncion= fn()
+        resultado= false
     }
-    
-    return resultado
-    
+    else{
+       valorFuncion=null 
+    }
 }
+
 
 function objetoConClousure() {
     var numero=0
