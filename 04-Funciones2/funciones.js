@@ -23,22 +23,24 @@ function creadorDeIncrementos(valor) {
     
     
 }
-///no tengo idea como hacer una invocacion unica
-
+///invocacion unica
 var resultado=true
 function invocacionUnica(fn) {
     var valorFuncion
     
-    if(resultado==true) {
-        valorFuncion= fn()
-        resultado= false
-        return valorFuncion
-    }
-    else{
-       valorFuncion=null
-       return valorFuncion
+    return function sumaValor(){
+        if(resultado==true) {
+            valorFuncion= fn()
+            resultado= false
+            return valorFuncion 
+        }
+        else{
+            valorFuncion=null
+            return valorFuncion
+        }
     }
 }
+
 
 
 function objetoConClousure() {
