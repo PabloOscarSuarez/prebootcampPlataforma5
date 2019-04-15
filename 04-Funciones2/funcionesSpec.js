@@ -68,7 +68,7 @@ describe('invocacionUnica', function() {
   })
 
 
-  it('La función debería incrementar una única vez', function() {
+  fit('La función debería incrementar una única vez', function() {
   
     // Una vez que corremos esta función por primera vez, no deberia volver a tener efecto
     incrementar();
@@ -79,9 +79,9 @@ describe('invocacionUnica', function() {
     expect(num).toEqual(1);
   });
 
-  it('La propia funcion registra que se ejecute y no un ente externo', function() {
+  fit('La propia funcion registra que se ejecute y no un ente externo', function() {
      
-    var decrementar = invocacionUnica(function() {
+    var decrementar = invocacionUNica(function() {
       num--;
     })
 

@@ -25,8 +25,8 @@ function creadorDeIncrementos(valor) {
 }
 ///invocacion unica
 var resultado=true
+var valorFuncion=0
 function invocacionUnica(fn) {
-    var valorFuncion
     
     return function sumaValor(){
         if(resultado==true) {
@@ -40,7 +40,21 @@ function invocacionUnica(fn) {
         }
     }
 }
-
+var resultado1=true
+function invocacionUNica(fn) {
+    
+    return function sumaValor(){
+        if(resultado1==true) {
+            valorFuncion= fn()
+            resultado1= false
+            return valorFuncion 
+        }
+        else{
+            valorFuncion=null
+            return valorFuncion
+        }
+    }
+}
 
 
 function objetoConClousure() {
